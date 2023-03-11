@@ -176,6 +176,6 @@ resource "aws_route53_record" "blog" {
   zone_id = data.aws_route53_zone.selected.zone_id
   name    = "blog.getabhiram.tech"
   type    = "A"
-  ttl     = 300
+  ttl     = 500
   records = [ aws_eip.webserver.public_ip ]
 }
